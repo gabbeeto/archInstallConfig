@@ -1,0 +1,41 @@
+# 🌸 pink_dream zathura
+
+# --- UI ---
+set font "JetBrainsMono Nerd Font 10"
+set guioptions ""
+set statusbar-h-padding 8
+set statusbar-v-padding 6
+set selection-clipboard clipboard
+set scroll-step 100
+set scroll-full-step 50
+
+# --- Colors (base) ---
+set default-bg     "#2a1f2d"
+set default-fg     "#f8e7f3"
+
+# --- Status bar ---
+set statusbar-bg   "#1f1621"
+set statusbar-fg   "#ff9ec7"
+
+# --- Input bar ---
+set inputbar-bg    "#1f1621"
+set inputbar-fg    "#f8e7f3"
+
+# --- Notifications ---
+set notification-bg   "#ff9ec7"
+set notification-fg   "#2a1f2d"
+set notification-error-bg "#ff7eb6"
+set notification-error-fg "#2a1f2d"
+set notification-warning-bg "#f9e2af"
+set notification-warning-fg "#2a1f2d"
+
+# --- Highlights ---
+set highlight-color        "#e7c6ff"
+set highlight-active-color  "#ff9ec7"
+
+# --- Render / recolor (this makes the PDF itself pink-friendly) ---
+set recolor true
+set recolor-darkcolor  "#f8e7f3"
+set recolor-lightcolor "#2a1f2d"
+set recolor-keephue    true
+set recolor-reverse-video false

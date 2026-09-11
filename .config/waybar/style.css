@@ -1,0 +1,159 @@
+@define-color base #2a1f2d;
+@define-color mantle #1f1621;
+@define-color text #f8e7f3;
+@define-color subtext #c9a9c4;
+@define-color pink #ff9ec7;
+@define-color pink2 #ff7eb6;
+@define-color lavender #e7c6ff;
+@define-color mint #b8e0d2;
+@define-color yellow #f9e2af;
+@define-color blue #a6c8ff;
+
+* {
+  font-family: "JetBrainsMono Nerd Font", "Noto Color Emoji";
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent;
+  color: @text;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+  margin: 6px 10px;
+}
+
+#workspaces,
+#custom-media,
+#window,
+#network,
+#battery,
+#clock,
+#tray,
+
+#pulseaudio,
+#custom-power {
+  background: alpha(@base, 0.88);
+  color: @text;
+  border-radius: 18px;
+  padding: 4px 12px;
+  margin: 2px 1px;
+  border: 1px solid alpha(@pink, 0.35);
+  box-shadow: 0 0 8px alpha(@pink, 0.18);
+}
+
+#pulseaudio{
+color: @pink;
+color: @subtext;
+  
+}
+
+#workspaces button {
+  padding: 0 8px;
+  margin: 0 2px;
+  border-radius: 14px;
+  color: @subtext;
+  background: transparent;
+}
+
+#workspaces button.active {
+  color: @base;
+  background: @pink;
+  box-shadow: 0 0 10px alpha(@pink, 0.6);
+}
+
+#workspaces button:hover {
+  color: @base;
+  background: @lavender;
+}
+
+#workspaces button.urgent {
+  color: @base;
+  background: @pink2;
+}
+
+#window {
+  color: @lavender;
+}
+
+#custom-media {
+  color: @pink;
+}
+
+#custom-media.playing {
+  color: @pink;
+}
+
+#custom-media.paused {
+  color: @yellow;
+}
+
+#custom-media.stopped {
+  color: @subtext;
+}
+
+#network {
+  color: @mint;
+}
+
+#network.disconnected {
+  color: @pink2;
+}
+
+#battery {
+  color: @lavender;
+}
+
+#battery.charging,
+#battery.plugged {
+  color: @mint;
+}
+
+#battery.warning:not(.charging) {
+  color: @yellow;
+}
+
+#battery.critical:not(.charging) {
+  color: @pink2;
+  animation: blink 0.8s linear infinite alternate;
+}
+
+#clock {
+  color: @pink;
+}
+
+#tray {
+  padding: 4px 10px;
+}
+
+#custom-power {
+  color: @pink2;
+  padding: 4px 12px;
+}
+
+#custom-power:hover {
+  background: @pink2;
+  color: @base;
+}
+
+tooltip {
+  background: @base;
+  border: 1px solid @pink;
+  border-radius: 14px;
+}
+
+tooltip label {
+  color: @text;
+}
+
+@keyframes blink {
+  to {
+    opacity: 0.4;
+  }
+}
