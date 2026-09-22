@@ -9,7 +9,7 @@ sudo pacman -S wl-clipboard  --noconfirm --needed
 
 sudo pacman -S keyd --noconfirm --needed
 sudo pacman -S yt-dlp --nOconfirm --needed
-sudo pacman -S qutebrowser --noconfirm --needed
+sudo pacman -S qutebrowser yt-dlp --noconfirm --needed
 sudo pacman -S cargo --noconfirm --needed
 sudo pacman -S snapshot --noconfirm --needed
 sudo pacman -S imv --noconfirm --needed

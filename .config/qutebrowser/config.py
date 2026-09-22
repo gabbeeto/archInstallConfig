@@ -171,6 +171,10 @@ c.url.searchengines = {
     "yt": "https://youtube.com/results?search_query={}",
     "gh": "https://github.com/search?q={}",
     "aw": "https://wiki.archlinux.org/?search={}",
+    "dw": "https://dictionary.cambridge.org/dictionary/english/={}",
+    "dp": "https://dictionary.cambridge.org/pronunciation/english/={}",
 }
 
+
+config.bind(",y", 'spawn mpv -f "bestvideo[height<=480]+bestaudio/best[height<=480]" {url}')
 config.load_autoconfig()
