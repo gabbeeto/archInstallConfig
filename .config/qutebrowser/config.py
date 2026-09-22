@@ -176,5 +176,5 @@ c.url.searchengines = {
 }
 
 
-config.bind(",y", 'spawn mpv -f "bestvideo[height<=480]+bestaudio/best[height<=480]" {url}')
+config.bind(",y", 'spawn mpv --ytdl-format="bestvideo[height<=480]+bestaudio/best[height<=480]" {url}')
 config.load_autoconfig()
