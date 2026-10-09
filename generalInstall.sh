@@ -1,8 +1,6 @@
 
 # archinstall
 sudo pacman -S niri waybar fuzzel mako xdg-desktop-portal-gnome alacritty nautilus --noconfirm --needed
-# intel graphics from archinstall I think
-sudo pacman -S mesa vulkan-intel intel-media-driver  --noconfirm --needed
 
 
 sudo pacman -S wl-clipboard  --noconfirm --needed
