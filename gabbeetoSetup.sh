@@ -19,3 +19,4 @@ mkdir -p ~/private/config
 
 # my private configs
 # git clone git@github.com:gabbeeto/privateConfig.git ~/private/config
+git clone git@github.com:gabbeeto/school.git ~

@@ -1,4 +1,7 @@
-sudo pacman -S krita firefox blender --noconfirm --needed
+sudo sed -i '/^#\[multilib\]/,/^#Include/ s/^#//' /etc/pacman.conf
+sudo pacman -Syu
+
+sudo pacman -S krita firefox blender steam discord --noconfirm --needed
 
 flatpak-install-if-needed() {
     if ! flatpak list --app | grep -q "$1"; then

@@ -52,6 +52,7 @@ sudo pacman -S fcitx5 fcitx5-configtool fcitx5-gtk fcitx5-qt fcitx5-table-other 
 sudo pacman -S fuse2 --noconfirm --needed
 
 
+sudo pacman -S luanti --noconfirm --needed
 
 sudo systemctl enable keyd --now
 sudo systemctl start keyd
