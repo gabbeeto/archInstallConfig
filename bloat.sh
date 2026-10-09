@@ -10,3 +10,5 @@ flatpak-install-if-needed() {
         flatpak update --noninteractive "$1"
     fi
 }
+
+flatpak-install-if-needed org.vinegarhq.Sober
