@@ -1,5 +1,7 @@
 bash ./generalInstall.sh
 
+cp ~/archInstallConfig/.config/* ~/.config/ -rf
+
 git config --global user.name "gabbeeto"
 git config --global user.email "124828006+gabbeeto@users.noreply.github.com"
 # generate key for github
