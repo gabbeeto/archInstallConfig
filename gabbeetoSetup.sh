@@ -1,6 +1,9 @@
 bash ./generalInstall.sh
 
 cp ~/archInstallConfig/.config/* ~/.config/ -rf
+sudo cp ~/archInstallConfig/etc/keyd/default.conf  /etc/keyd/default.conf
+sudo keyd reload
+
 
 git config --global user.name "gabbeeto"
 git config --global user.email "124828006+gabbeeto@users.noreply.github.com"
