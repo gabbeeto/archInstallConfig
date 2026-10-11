@@ -109,6 +109,8 @@ kd --update-dict
 # sets fish
 sudo pacman -S fish pkgfile ttf-dejavu powerline-fonts  inetutils --noconfirm --needed 
 
+sudo pacman -S qt5ct qt6ct kvantum kvantum-qt5 --noconfirm --needed 
+
 # font used
 sudo pacman -S ttf-jetbrains-mono-nerd --noconfirm --needed 
 chsh -s /usr/bin/fish
