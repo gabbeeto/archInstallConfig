@@ -1,7 +1,7 @@
 sudo sed -i '/^#\[multilib\]/,/^#Include/ s/^#//' /etc/pacman.conf
 sudo pacman -Syu
 
-sudo pacman -S krita firefox blender steam discord kdenlive xwayland-satellite --noconfirm --needed
+sudo pacman -S krita firefox blender steam discord kdenlive xwayland-satellite prismlauncher --noconfirm --needed
 
 flatpak-install-if-needed() {
     if ! flatpak list --app | grep -q "$1"; then
